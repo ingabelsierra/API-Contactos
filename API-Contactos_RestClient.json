@@ -1,0 +1,422 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-02T02:40:52.485Z",
+	"__export_source": "insomnia.desktop.app:v6.0.1",
+	"resources": [
+		{
+			"_id": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"created": 1533087576256,
+			"description": "",
+			"modified": 1533087576256,
+			"name": "API-Contactos",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_6ffdb32f912c499db02b5b5135524b57",
+			"color": null,
+			"created": 1533087576328,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1533087576328,
+			"modified": 1533087576328,
+			"name": "New Environment",
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_4337245a59be4d2da605b3412a41a823",
+			"cookies": [
+				{
+					"creation": "2018-07-24T02:46:29.905Z",
+					"domain": "localhost",
+					"expires": "2018-07-31T23:53:41.000Z",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "5074433132626495",
+					"key": "laravel_session",
+					"lastAccessed": "2018-07-31T21:53:41.408Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6IlpKUW9lNUpGemlcL1psSk5aeG5yRWJBPT0iLCJ2YWx1ZSI6Ik5CNmlUQWZIYXFhblYrSnJud2VWakh4aTBXXC9mRTZLQ1RySXkyTlwvSUM3WDNrRFhWaEY0bzYwMU04N1h5RXNWUmNPNG1JdVwvRGs0YnM2a1ZqdXJCYWVBPT0iLCJtYWMiOiJjOGU4Y2Q5MDNlMGY5M2IyZmUzOTE0NjlmYzZhYjQ5MjQ0YjUzNDBhZTU0OWFkOTAyZjFmZGJhMmY1MWJlZTEzIn0%3D"
+				},
+				{
+					"creation": "2018-07-24T02:55:55.482Z",
+					"domain": "localhost",
+					"expires": "2018-07-31T18:00:13.000Z",
+					"hostOnly": true,
+					"id": "9827764484243418",
+					"key": "XSRF-TOKEN",
+					"lastAccessed": "2018-07-31T16:00:13.754Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6IlgrdGNuRFp4VittNWkzWDljNEErdHc9PSIsInZhbHVlIjoiNUtQRVFHeVRBY29pK0RVckpcL2VcL2pHVkU4aVRFQzQ5TUdXMVUyRnlRd2lxODNJUDVaYTliWDZEUVA4UnMycUpGbjBLbWQyNFNwd3JON3NlYWNyaVJwQT09IiwibWFjIjoiMjA5MGE5ODg4ZDM5YmI0NGUzZmFjMzk1NDU2Yzk5ZWVkMWM3ZDhkOGQyMGI2YTIyZWUwYmU5Mzc3MzU4ZTNlNiJ9"
+				}
+			],
+			"created": 1533087576376,
+			"modified": 1533087576376,
+			"name": "Default Jar",
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_9864fb5317fd48faac4de701fa10b013",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_4cf8ff9b5a9543b0959d3b020c9c0ba1",
+						"name": "name",
+						"value": "prueba"
+					},
+					{
+						"id": "pair_506ec3830f084682b02809f4246939a4",
+						"name": "email",
+						"value": "ingabelsierra@gmail.com"
+					},
+					{
+						"id": "pair_a95b18ec3ed5437aaa333be0ce540b5f",
+						"name": "password",
+						"value": "laravelprueba"
+					},
+					{
+						"id": "pair_d1a07dc9429a46328b075f52e2e4e8be",
+						"name": "password_confirmation",
+						"value": "laravelprueba"
+					}
+				]
+			},
+			"created": 1533087576419,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5c9153cf8578418e8b3a510a84d0c90b",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"id": "pair_a49e499282d84f4cb7e8907a001a72f9",
+					"name": "X-Requested-With",
+					"value": "XMLHttpRequest"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532192131358,
+			"method": "POST",
+			"modified": 1533170855802,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_aed3312da98540fcaacdd8acb9ec53e1",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_abc915fe93144a638595192975f62d77",
+						"name": "name",
+						"value": "abel"
+					},
+					{
+						"id": "pair_a4472b98fd564415881432b3c92fbfa1",
+						"name": "email",
+						"value": "ingabelsierra@gmail.com"
+					},
+					{
+						"id": "pair_2d16108bd84448cdbba9883f00eb6d23",
+						"name": "password",
+						"value": "laravelprueba"
+					},
+					{
+						"id": "pair_7c4c64d350ca4714a82c5d688a79f1dd",
+						"name": "c_password",
+						"value": "laravelprueba"
+					}
+				]
+			},
+			"created": 1533087576424,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6e30e5eb4528485eae7a98d6837fce14",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532400415470,
+			"method": "POST",
+			"modified": 1533171429668,
+			"name": "Registrar Usuario",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e57ec306129c475988ce26919f0fe168",
+			"authentication": {},
+			"body": {},
+			"created": 1533087576430,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8f57b797221149cc91d8127233199577",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				},
+				{
+					"id": "pair_0fc635de51b34b769b0695712f3f327d",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533081522309,
+			"method": "POST",
+			"modified": 1533170843833,
+			"name": "Mostrar Usuario",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/details",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e47e2fe0ba864235bc829655217ebfcd",
+			"authentication": {},
+			"body": {},
+			"created": 1533089152735,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_81c4580926654b62b6edce8df0f4bfa6",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				},
+				{
+					"id": "pair_5fad146ed6dd4d60b4a92d49939935fd",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533089152735,
+			"method": "POST",
+			"modified": 1533176990268,
+			"name": "Contactos",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/contacts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_043b58d2f74341018216984f260ab234",
+			"authentication": {},
+			"body": {},
+			"created": 1533097017961,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_81c4580926654b62b6edce8df0f4bfa6",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				},
+				{
+					"id": "pair_5fad146ed6dd4d60b4a92d49939935fd",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533085337522,
+			"method": "GET",
+			"modified": 1533172781410,
+			"name": "Contacto por id",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/contacts/7",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3089696c6fdd46ba9b34f50eed4731fe",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_f4181e80cd704d05a5b292b98ff08a85",
+						"name": "nombres",
+						"value": "ss"
+					},
+					{
+						"id": "pair_4f8f84c7aae440f5ad7fe4dfb2f7707c",
+						"name": "apellidos",
+						"value": "ss"
+					},
+					{
+						"id": "pair_09f94c77140c4888be1c16823d79cf68",
+						"name": "direccion",
+						"value": "ss"
+					},
+					{
+						"id": "pair_9465ee787c7f4412b4613fa15c0eb693",
+						"name": "telefono",
+						"value": "4521"
+					}
+				]
+			},
+			"created": 1533171356510,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_e2de209c2bca4cd8a252bc13e01ff4b4",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				},
+				{
+					"id": "pair_c2a6f83668ae47dabf4e79cc415455e2",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533171356510,
+			"method": "POST",
+			"modified": 1533174246401,
+			"name": "Nuevo Contacto",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/contacts/create",
+			"_type": "request"
+		},
+		{
+			"_id": "req_85ceeabc3a7b43da95ed697e54b0a2df",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_234cbda81e7f49a88307cc90e497ad9d",
+						"name": "nombres",
+						"value": "Abel Francisco"
+					},
+					{
+						"id": "pair_0372a1e085a14f7a80187d0d272bafb5",
+						"name": "apellidos",
+						"value": "Sierra Diaz"
+					},
+					{
+						"id": "pair_eb626f6a73f9408a9f26fcf0048180ae",
+						"name": "direccion",
+						"value": "CUAN"
+					},
+					{
+						"id": "pair_303f32e4954a4fd6958b65061c4f2358",
+						"name": "telefono",
+						"value": "3106138739"
+					}
+				]
+			},
+			"created": 1533172816968,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b7dc07878ede4f41972014f062073616",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"id": "pair_e585f21b492b4dba9ceb29de8560fb8a",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533172816968,
+			"method": "PUT",
+			"modified": 1533177391073,
+			"name": "Actualizar Contacto",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/contacts/update/29",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2d19a316ec934f3893449312b605a51f",
+			"authentication": {},
+			"body": {},
+			"created": 1533177343729,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a279f6b0cbab41e09b40e7553f3585b5",
+					"name": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNTZiZTY3ZjJkNjQ1MzJiMjgwMWQ3OTlkMDE5ZTA1ZDBlMjVlNjU4YjhlNWU3N2YzYzkyOGRkMzBkMjQ3YTM3MmEwNzRhNTgzZTYzMzE3In0.eyJhdWQiOiIxIiwianRpIjoiOTA1NmJlNjdmMmQ2NDUzMmIyODAxZDc5OWQwMTllMDVkMGUyNWU2NThiOGU1ZTc3ZjNjOTI4ZGQzMGQyNDdhMzcyYTA3NGE1ODNlNjMzMTciLCJpYXQiOjE1MzMxMzQ2NTMsIm5iZiI6MTUzMzEzNDY1MywiZXhwIjoxNTY0NjcwNjUzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ohGajhLQZshVUwR7cxpIg0kNbNXYt-pgmAhxbbhfQi3biIjHOdgE4ncY9WntQ5n1gF_rlURi_1_pUM4TiOjo348VAcQBYMiuVzvqqZSpqpwt-DDTk7nZIprvEdzIOAfDucBimIGpn8lIJKLcbNj3UDHu0IvFnCOrGYba-4TQmzLcdRubSLB62BGx1T6V8A9K2D-sO1laDV5wiRcnShIJQhWT7JgjJ9MJ2QGHtfElL1fqJ8Qw7x8Dojma5yvJbQVmWP1YEDPuwSxebPzFRpPDPo-WJQS2_TNNXr2hCJH3ETfLA9DMFqQWjHZI9mVcOYuYz4QJr9AZ3H1yTIl1Vx2Ob-V5rA9Wv0aaetP001fD3u65soi0GlUnGig2u08RXO98hKdfsfUZg_HAkDRn7ohghbgdo_23pDdN-JCi4MxXBSCPaDk_z8yoJdmUEdrkskbijAtu2kMDZk8SdYfVbnGgEdYVeRGwvfTUEVZTzrxRXgM2Q9-PP1Lmp3FM3AWLvi1YaifjVFzMpvcyOlLaIVn2eECmMPETsJP-47ZMa_kMDVzCNQhWjozP_fmSGX9t411RV8wvGXvc1C64afyHMq6DF-bVSIt8qKet5zxI14lUIwGWsNUQ4h93Na29j0vdcPpCMPnVqhgRmYr2f16GEMNsFyQ8sbZT09-aMvoX2f4Ppyw"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533177343729,
+			"method": "DELETE",
+			"modified": 1533177405777,
+			"name": "Eliminar Contacto",
+			"parameters": [],
+			"parentId": "wrk_f641bc423f544b3abaa56e4a0fcd0481",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost/API-Contactos/public/api/contacts/delete/29",
+			"_type": "request"
+		}
+	]
+}

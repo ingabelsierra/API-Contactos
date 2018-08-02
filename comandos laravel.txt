@@ -1,0 +1,237 @@
+1. crear proyecto laravel
+composer create-project --prefer-dist laravel/laravel MageritFree
+
+-- Instalar plantilla adminlte con composer
+composer global require "acacha/adminlte-laravel-installer=~1.0"
+adminlte-laravel install
+
+
+
+configuracion del proyecto
+2.cambiar nombre de la aplicacion
+php artisan app:name MageritFree
+el cambio realizado se ve en app/http/Controllers/Controller.php
+
+
+3.cambiar el proyecto a modo debug en config/app.php linea 41 true 
+
+4.cambiar zona horaria --> America/Bogota en config/app.php linea 67
+
+5.copiar la carpeta de traduccion es a la ruta --> resources/lang
+
+6.Modificar la variable locale a es en la ruta --> config/app.php linea 80
+
+7.Iniciar el servidor...
+php artisan serve
+
+8.Probar el proyecto en el localhost:8000
+
+
+9.Modificar provilegios de acceso a la base de datos en el archivo .env que se encuentra en la raiz del proyecto
+DB_DATABASE
+DB_USERNAME
+DB_PASSWORD
+
+10:Incluir rutas del proyecto --> routes/web.php
+Route::resource('proyecto/proyecto','ProyectoController');
+
+11.crear controlador 
+php artisan make:controller ProyectoController
+se crea en la ruta --> app/http/Controllers
+
+12.crear request
+php artisan make:request ProyectoFormRequest
+se crea en la ruta --> app/http/Requests
+
+13.Integrar plantilla boostrap al proyecto
+-->1.copiamos las carpetas de la plantilla (css, dist,font,img) a la carpeta public del proyecto
+-->2.crear dentro de la carpeta resources/views una carpeta llamada layouts 
+-->3.crear un archivo llamado admin.blade.php y copiar el contenido del index de la plantilla boostrap
+-->4.Referenciar en todas las rutas de hojas de estilo y javascripts--> {{asset('  ')}}
+
+
+
+14.agregar en composer.json requiere
+
+"laravelcollective/html":"^5.4.0"
+//ejecutar comando 
+composer update
+
+
+15.agregar en config/app.php
+
+//Application Service Providers...
+Collective\Html\HtmlServiceProvider::class,
+
+//aliases
+'Form' => Collective\Html\FormFacade::class,
+'Html' => Collective\Html\HtmlFacade::class,
+
+
+//Crear las vistas e la ruta --> resources/wiews ejmplo: --> resources/wiews/proyecto/informacion/index.blade.php
+
+
+16.Crear login
+//crear auth
+php artisan make:auth
+
+//cambiar la variable $redirectTo en la ruta app/http/controllers/auth/loginController.php para que redireccione a la vista 
+//que queremos cargar una vez nos logueamos exitosamente en el sistema
+
+ protected $redirectTo = '/proyecto/informacion';
+
+
+//crear tablas de usuario (users y migrations) en la base de datos
+php artisan migrate
+
+//modificar el archivo /routes/web.php
+Route::get('/', function () {
+    return view('auth/login');
+});
+
+// agregar en el contructor de cada controlador la funcion para que sea obligatorio el logeo al entrar a la vista
+// $this->middleware('auth');
+
+
+//eliminar opcion de registro: 
+
+
+
+
+
+--------> Comandos
+
+//crear modelo
+php artisan make:model Proyecto
+
+
+//mostrar rutas del proyecto
+php artisan route:list
+
+
+---------> Subir Proyecto
+
+1. Comprimir la carpeta del proyecto con extension .zip
+2.Descomprimirla en la raiz del servidor
+3.copiar los archivos de la carpeta public del proyecto laravel a la carpeta publica del servidor
+4.en el archivo index.php cambiar la ruta de boostrap en las lineas 
+require __DIR__.'/../../../MageritFree/bootstrap/autoload.php';
+$app = require_once __DIR__.'/../../../MageritFree/bootstrap/app.php';
+5.Cambiar las credenciales de usuario de la base de datos en el archivo .env
+
+
+
+----------> agregar libreria PDF
+
+1.ejecutar en consola ---->  composer require barryvdh/laravel-dompdf
+
+2.agregar providers y los aliases en en archivo config/app.php
+
+'providers' => 
+Barryvdh\DomPDF\ServiceProvider::class,
+
+'aliases' =>
+
+'PDF' => Barryvdh\DomPDF\Facade::class,
+
+// crear llave (clone git)
+php artisan key:generate
+
+// version laravel
+php artisan list
+
+
+
+APIRESTFUL
+
+composer create-project --prefer-dist laravel/laravel APIrestful
+
+php artisan make:model Producto --all
+php artisan make:model Transaccion --all
+php artisan make:model Categoria --all
+
+//crear controlador usuario
+php artisan make:controller UserController -m User
+
+//crear tabla relacion n-n categoria-producto
+php artisan make:migration create_categoria_producto_table
+
+
+php artisan migrate
+//execpcion pdo config/database.php
+'charset' => 'utf8'
+'collation' => 'utf8_unicode_ci'
+
+//generar nueva llave
+php artisan key:generate
+
+//generar seeders
+php artisan make:seeder UsersTableSeeder
+php artisan make:seeder ProductsTableSeeder
+
+//para que composer pueda escribir en la bse de datos
+composer dump-autoload
+
+//correr el seeder para que inserte los datos
+php artisan db:seed --class=UsersTableSeeder
+php artisan db:seed --class=ProductsTableSeeder
+
+
+//generar datos usando factories
+php artisan tinker
+//crear  datos en instancia a la clase User
+factory('App\User',10)->create();
+factory('App\Product',10)->create();
+
+
+// instalar passport
+
+composer require laravel/passport
+
+// agregar provider
+
+'providers' =>[
+    ...
+    Laravel\Passport\PassportServiceProvider::class,
+    ...
+],
+
+// instalar las llaves y actualizar el modelo usuario
+
+php artisan passport:install
+
+
+php artisan make:model Contacto --all
+
+
+//volver a crear tablas en la base de datos--borra las tablas
+php artisan migrate:refresh
+
+php artisan migrate:fresh
+
+
+// cada vez que se crea una ruta para autenticar se ejecuta
+
+php artisan passport:install --force
+
+
+
+//crear factory
+php artisan tinker
+factory('App\Contact',10)->create();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
